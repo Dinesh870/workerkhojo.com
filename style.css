@@ -2,8 +2,10 @@
     margin: 0px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    /* overflow hidden; */
 } .nav{
-    height: 80px;
+    height: 5rem;
     background-color: rgb(241, 238, 227);
     display: flex;
     justify-content: space-between;
@@ -11,14 +13,14 @@
 }
 .logo{
     height: 100%;
-    width: 150px;
+    width: 9.375rem;
     background-image: url('logo.png');
     background-size: cover;
     background-color: rgb(241, 238, 227);
     border-radius: 5%;
 }
 .home{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     background-color: rgb(241, 238, 227);
     color: black;
@@ -27,48 +29,48 @@
     color: rgb(48, 57, 53);
 }
 .search_bar{
-    height: 50px;
-    width: 350px;
+    height: 3.125rem;
+    width: 21.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .search{
-    height: 40px;
+    height: 2.5rem;
     width: 85%;
-    font-size: 18px;
+    font-size: 1.125rem;
     border: none;
 }
 .search-icon{
-    height: 40px;
-    width: 35px;
-    font-size: 25px;
+    height: 2.5rem;
+    width: 2.1875rem;
+    font-size: 1.5625rem;
     color: #0f1111;
     background-color: #febd68;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    border-top-right-radius:  4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius:  .25rem;
+    border-bottom-right-radius: .25rem;
 }
 .blog{
-    width: 70px;
+    width: 4.375rem;
     color: black;
     text-align: center;
 }
 .about{
-    font-size: 15px;
-    width: 60px;
+    font-size: .9375rem;
+    width: 3.75rem;
     color: black;
     text-align: center;
 }
 .filter{
-    font-size: 15px;
-    width: 100px;
+    font-size: .9375rem;
+    width: 6.25rem;
     color: black;
     text-align: center;
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 a{
     text-decoration: none;
@@ -77,52 +79,94 @@ a{
 /* main section */
 /* hero section */
 .hero{
-    margin-top: 3px;
+    min-height: 0rem;
+    min-height: 0rem;
+    /* height: 5rem; */
+    background-image: url('hero.jpg');
+    background-size: cover;
+    margin-top: .1875rem;
+    padding: 17rem 0rem;
 }
 /* box */
 .box{
-    height: 1000px;
+    min-height: 30.5rem;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-color: rgba(171, 214, 214, 0.274);
-    margin-top: 3px;
+    margin-top: .1875rem;
 }  
 .common{
     background-color: #FFFFFF;
-    margin: 15px 0px 0px;
-    padding-top: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 15px;
+    margin: .9375rem 0px 0px;
+    padding: .9375rem .3125rem;
     text-align: center;
 }
-.common.p{
-    font: 20px;
+.image{
+    height: 16.35rem;
+    width: 16.35rem;
+    cursor: pointer;
+}
+#carpenter{
+    background-image: url('carpenters.jpg');
+    background-size: cover;
+}
+#welder{
+    background-image: url('welder.jpeg');
+    background-size: cover;
+}
+#labour{
+    background-image: url('labour.jpeg');
+    background-size: cover;
+}
+#potmaker{
+    background-image: url('potMaker.webp');
+    background-size: cover;
+}
+#driver{
+    background-image: url('driver.jpg');
+    background-size: cover;
+}
+#tailor{
+    background-image: url('tailor.jpg');
+    background-size: cover;
+}
+#photographer{
+    background-image: url('photographer.jpeg');
+    background-size: cover;
+}
+#cleaner{
+    background-image: url('cleaner.jpeg');
+    background-size: cover;
+}
+.common p{
+    font: 1.25rem;
 }
 
 /* footer */
 .foot{
     
-    height: 500px;
+    height: 31.25rem;
     background-color: #d0d7de;
 }
 #backToTop{
     background-color: rgb(222, 234, 222);
-    padding: 15px;
+    padding: .9375rem;
     text-align: center;
-    font-size: 13px;
+    font-size: .8125rem;
+    background-color:fuchsia
 }
 .foot_panel{
-    font-size: 15px;
+    font-size: .9375rem;
     font-weight: 500;
-    margin: 30px,0px,0px,50px;
+    margin: 1.875rem,0px,0px,3.125rem;
     padding: 30px;
 }
 li {
     list-style: none;
-    padding: 2px 0px 0px;
+    padding: .125rem 0px 0px;
 }
 
 /* circle */
@@ -132,12 +176,12 @@ li {
     justify-content: center;
 }
 .circle{
-    height: 200px;
-    width: 200px;
-    border-top: 10px solid red;
-    border-right: 10px solid white;
-    border-bottom: 10px solid pink;
-    border-left: 10px solid wheat;
+    height: 12.5rem;
+    width: 12.5rem;
+    border-top: .625rem solid red;
+    border-right: .625rem solid white;
+    border-bottom: .625rem solid pink;
+    border-left: .625rem solid wheat;
     border-radius: 50%;
     animation-name: circle;
     animation-duration: .1ms;
